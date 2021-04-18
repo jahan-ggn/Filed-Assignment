@@ -1,0 +1,1367 @@
+{
+	"info": {
+		"_postman_id": "64a898b1-fabd-4fed-a8e0-747e03c644f4",
+		"name": "AudioApi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Positive",
+			"item": [
+				{
+					"name": "Song",
+					"item": [
+						{
+							"name": "Create Song-1",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"audioFileType\": \"song\",\n    \"audioFileMetadata\": {\n        \"name\": \"hello.mp3\",\n        \"duration\": 50\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "127.0.0.1:8000/api/v1/audio/",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"audio",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create Song-2",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"audioFileType\": \"song\",\n    \"audioFileMetadata\": {\n        \"name\": \"world.mp3\",\n        \"duration\": 100\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "127.0.0.1:8000/api/v1/audio/",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"audio",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Song-1",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "127.0.0.1:8000/api/v1/audio/song/1",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"audio",
+										"song",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "List Songs",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "127.0.0.1:8000/api/v1/audio/song/",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"audio",
+										"song",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update Song-2",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"audioFileType\": \"song\",\n    \"audioFileMetadata\": {\n        \"name\": \"hello world.mp3\",\n        \"duration\": 190\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "127.0.0.1:8000/api/v1/audio/song/2",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"audio",
+										"song",
+										"2"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete Song-2",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "127.0.0.1:8000/api/v1/audio/song/2",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"audio",
+										"song",
+										"2"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Podcast",
+					"item": [
+						{
+							"name": "Create Podcast-1",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"audioFileType\": \"podcast\",\n    \"audioFileMetadata\": {\n        \"name\": \"hello.mp3\",\n        \"duration\": 50,\n        \"host\": \"localhost\",\n        \"participants\": \"'jahan','gagan'\"\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "127.0.0.1:8000/api/v1/audio/",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"audio",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create Podcast-2",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"audioFileType\": \"podcast\",\n    \"audioFileMetadata\": {\n        \"name\": \"Filed.mp3\",\n        \"duration\": 50,\n        \"host\": \"localhost\"\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "127.0.0.1:8000/api/v1/audio/",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"audio",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create Podcast-Without participants",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"audioFileType\": \"podcast\",\n    \"audioFileMetadata\": {\n        \"name\": \"world.mp3\",\n        \"duration\": 50,\n        \"host\": \"localhost\",\n        \"participants\": \"'jahan'\"\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "127.0.0.1:8000/api/v1/audio/",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"audio",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Podcast-1",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"audioFileType\": \"podcast\",\n    \"audioFileMetadata\": {\n        \"name\": \"world.mp3\",\n        \"duration\": 50,\n        \"host\": \"localhost\",\n        \"participants\": \"'jahan'\"\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "127.0.0.1:8000/api/v1/audio/podcast/1",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"audio",
+										"podcast",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "List Podcast",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"audioFileType\": \"podcast\",\n    \"audioFileMetadata\": {\n        \"name\": \"world.mp3\",\n        \"duration\": 50,\n        \"host\": \"localhost\",\n        \"participants\": \"'jahan'\"\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "127.0.0.1:8000/api/v1/audio/podcast",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"audio",
+										"podcast"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update Podcast-2",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"audioFileType\": \"podcast\",\n    \"audioFileMetadata\": {\n        \"name\": \"hello world.mp3\",\n        \"duration\": 100,\n        \"host\": \"localhost\",\n       \"participants\": \"['jahan', 'gagan']\"\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "127.0.0.1:8000/api/v1/audio/podcast/2",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"audio",
+										"podcast",
+										"2"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete Podcast-2",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "127.0.0.1:8000/api/v1/audio/podcast/2",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"audio",
+										"podcast",
+										"2"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "AudioBook",
+					"item": [
+						{
+							"name": "Create AudioBook-1",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"audioFileType\": \"audiobook\",\n    \"audioFileMetadata\": {\n        \"title\": \"hello\",\n        \"author\": \"jahan\",\n        \"narrator\": \"filed\",\n        \"duration\": 50\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "127.0.0.1:8000/api/v1/audio/",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"audio",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create AudioBook-2",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"audioFileType\": \"audiobook\",\n    \"audioFileMetadata\": {\n        \"title\": \"world\",\n        \"author\": \"gagan\",\n        \"narrator\": \"filed\",\n        \"duration\": 50\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "127.0.0.1:8000/api/v1/audio/",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"audio",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get AudioBook-1",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "127.0.0.1:8000/api/v1/audio/audiobook/1",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"audio",
+										"audiobook",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "List AudioBook",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "127.0.0.1:8000/api/v1/audio/audiobook",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"audio",
+										"audiobook"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update AudioBook-2",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"audioFileType\": \"audiobook\",\n    \"audioFileMetadata\": {\n        \"title\": \"world\",\n        \"author\": \"jahan\",\n        \"narrator\": \"filed\",\n        \"duration\": 50\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "127.0.0.1:8000/api/v1/audio/audiobook/2",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"audio",
+										"audiobook",
+										"2"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete AudioBook-2",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "127.0.0.1:8000/api/v1/audio/audiobook/2",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"audio",
+										"audiobook",
+										"2"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Negative",
+			"item": [
+				{
+					"name": "Song",
+					"item": [
+						{
+							"name": "Create Song-Missing required parameters-1",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"audioFileMetadata\": {\n        \"name\": \"kolvari.mp3\",\n        \"duration\": 50\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/v1/audio/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"audio",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create Song-Missing required parameters-2",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"audioFileType\": \"song\",\n    \"name\": \"kolvari.mp3\",\n    \"duration\": 50\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/v1/audio/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"audio",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create Song-Duration missing",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"audioFileType\": \"song\",\n    \"audioFileMetadata\": {\n        \"name\": \"kolvari.mp3\"\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/v1/audio/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"audio",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create Song-Name missing",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"audioFileType\": \"song\",\n    \"audioFileMetadata\": {\n        \"duration\": 50\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/v1/audio/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"audio",
+										""
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Podcast",
+					"item": [
+						{
+							"name": "Create Podcast-More than 10 participants",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"audioFileType\": \"podcast\",\n    \"audioFileMetadata\": {\n        \"name\": \"hello.mp3\",\n        \"duration\": 50,\n        \"host\": \"localhost\",\n        \"participants\": \"'jahan','gagan','a','b','c','d','e','f','g','h','i'\"\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/v1/audio/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"audio",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create Podcast-More than 100 characters in participant Copy",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"audioFileType\": \"podcast\",\n    \"audioFileMetadata\": {\n        \"name\": \"hello.mp3\",\n        \"duration\": 50,\n        \"host\": \"localhost\",\n        \"participants\": \"'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa'\"\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/v1/audio/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"audio",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create Podcast-Missing required parameters-1",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"audioFileMetadata\": {\n        \"name\": \"hello.mp3\",\n        \"duration\": 50,\n        \"host\": \"localhost\",\n        \"participants\": \"'jahan'\"\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/v1/audio/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"audio",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create Podcast-Missing required parameters-2",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"audioFileType\": \"podcast\",\n    \"name\": \"hello.mp3\",\n    \"duration\": 50,\n    \"host\": \"localhost\",\n    \"participants\": \"'jahan'\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/v1/audio/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"audio",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create Podcast-Duration missing",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"audioFileType\": \"podcast\",\n    \"audioFileMetadata\": {\n        \"name\": \"hello.mp3\",\n        \"host\": \"localhost\",\n        \"participants\": \"'jahan','gagan'\"\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/v1/audio/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"audio",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create Podcast-Host missing",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"audioFileType\": \"podcast\",\n    \"audioFileMetadata\": {\n        \"name\": \"hello.mp3\",\n        \"duration\": 50,\n        \"participants\": \"'jahan','gagan'\"\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/v1/audio/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"audio",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create Podcast-Name missing",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"audioFileType\": \"podcast\",\n    \"audioFileMetadata\": {\n        \"duration\": 50,\n        \"host\": \"localhost\",\n        \"participants\": \"'jahan','gagan'\"\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/v1/audio/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"audio",
+										""
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "AudioBook",
+					"item": [
+						{
+							"name": "Create AudioBook-Missing required parameters-1",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"audioFileMetadata\": {\n        \"title\": \"hello\",\n        \"author\": \"jahan\",\n        \"narrator\": \"filed\",\n        \"duration\": 50\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/v1/audio/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"audio",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create AudioBook-Missing required parameters-2",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"audioFileType\": \"audiobook\",\n    \"title\": \"hello\",\n    \"author\": \"jahan\",\n    \"narrator\": \"filed\",\n    \"duration\": 50\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/v1/audio/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"audio",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create AudioBook-Title missing",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"audioFileType\": \"audiobook\",\n    \"audioFileMetadata\": {\n        \"author\": \"jahan\",\n        \"narrator\": \"filed\",\n        \"duration\": 50\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/v1/audio/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"audio",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create AudioBook-Duration missing",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"audioFileType\": \"audiobook\",\n    \"audioFileMetadata\": {\n        \"title\": \"hello\",\n        \"author\": \"jahan\",\n        \"narrator\": \"filed\"\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/v1/audio/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"audio",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create AudioBook-Author missing",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"audioFileType\": \"audiobook\",\n    \"audioFileMetadata\": {\n        \"title\": \"hello\",\n        \"narrator\": \"filed\",\n        \"duration\": 50\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/v1/audio/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"audio",
+										""
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create AudioBook-Narrator missing",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"audioFileType\": \"audiobook\",\n    \"audioFileMetadata\": {\n        \"title\": \"hello\",\n        \"author\": \"jahan\",\n        \"duration\": 50\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/v1/audio/",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"audio",
+										""
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Invalid",
+			"item": [
+				{
+					"name": "Invalid audioFileType",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"audioFileType\": \"filed\",\n    \"audioFileMetadata\": {\n        \"name\": \"kolvari.mp3\",\n        \"duration\": 50\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:8000/api/v1/audio/",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"audio",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Invalid audioFileMetadata key",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"audioFileType\": \"song\",\n    \"metadata\": {\n        \"name\": \"kolvari.mp3\",\n        \"duration\": 50\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "127.0.0.1:8000/api/v1/audio/",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"audio",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Server Error",
+			"item": [
+				{
+					"name": "Get doesnotexist song",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:8000/api/v1/audio/podcast/2",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"audio",
+								"podcast",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get doesnotexist podcast",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:8000/api/v1/audio/song/2",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"audio",
+								"song",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get doesnotexist audiobook",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "127.0.0.1:8000/api/v1/audio/audiobook/2",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"audio",
+								"audiobook",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
